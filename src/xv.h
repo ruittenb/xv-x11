@@ -1632,6 +1632,21 @@ byte *Conv8to24            PARM((byte *, int, int, byte *, byte *, byte *));
 void AlgInit               PARM((void));
 void DoAlg                 PARM((int));
 
+/*************************** XVALG_KERNELS.C ********************/
+void doBlurConvolv         PARM((byte *,int,int,byte *, int,int,int,int, int));
+void doSharpConvolv        PARM((byte *,int,int,byte *, int,int,int,int, int));
+void doEdgeConvolv         PARM((byte *,int,int,byte *, int,int,int,int));
+void doAngleConvolv        PARM((byte *,int,int,byte *, int,int,int,int));
+void doOilPaint            PARM((byte *,int,int,byte *, int,int,int,int, int));
+void doBlend               PARM((byte *,int,int,byte *, int,int,int,int));
+void doRotate              PARM((byte *,int,int,byte *, int,int,int,int,
+				 double, int));
+void doPixel               PARM((byte *,int,int,byte *, int,int,int,int,
+				 int, int));
+void doSpread              PARM((byte *,int,int,byte *, int,int,int,int,
+				 int, int));
+void doMedianFilter        PARM((byte *,int,int,byte *, int,int,int,int, int));
+
 
 /*************************** XVBROWSE.C ************************/
 void CreateBrowse          PARM((const char *, int, const char *, const char *,

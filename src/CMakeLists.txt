@@ -60,6 +60,7 @@ set(xv_sources
 	vprintf.c
 	xv24to8.c
 	xvalg.c
+	xvalg_kernels.c
 	xvbmp.c
 	xvbrowse.c
 	xvbutt.c
